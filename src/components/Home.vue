@@ -25,9 +25,9 @@
                 console.log("Hello")
             },
             play() {
-                var loop = true;
-                var easing = 'linear';
-                var direction = 'alternate';
+                let loop = true;
+                let easing = 'linear';
+                let direction = 'alternate';
 
                 anime({
                     targets: '.ball',
@@ -43,19 +43,19 @@
                         {value: '#18FF92'},
                         {value: '#5A87FF'}
                     ]
-                })
-                var ballTimeline = anime.timeline({
+                });
+                let ballTimeline = anime.timeline({
                     loop,
                     direction
-                })
-                var bar2Timeline = anime.timeline({
+                });
+                let bar2Timeline = anime.timeline({
                     loop,
                     direction
-                })
-                var bar1Timeline = anime.timeline({
+                });
+                let bar1Timeline = anime.timeline({
                     loop,
                     direction
-                })
+                });
                 ballTimeline
                     .add({
                         targets: '.ball',
@@ -72,7 +72,7 @@
                     translateY: '-80',
                     translateX: 470,
                     easing
-                })
+                });
                 bar2Timeline
                     .add({
                         targets: '.bar2',
@@ -89,7 +89,7 @@
                     translateY: '-100',
                     easing,
                     background: '#FBF38C'
-                })
+                });
                 bar1Timeline
                     .add({
                         targets: '.bar1',
