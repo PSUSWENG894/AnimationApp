@@ -17,7 +17,7 @@
         name: 'Home',
         data() {
             return {
-                msg: 'Welcome to My Animation!'
+                msg: 'Welcome to My Animation! App'
             }
         },
         methods: {
