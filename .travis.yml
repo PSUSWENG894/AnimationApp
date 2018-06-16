@@ -21,9 +21,11 @@ matrix:
         verbose: true
         on:
           branch: master
+        local-dir: dist
+        target-branch: gh-pages
+        verbose: true
 
       before_deploy:
-        - cd dist
     #    - zip -r deploy.zip package.json src/ public/
 
       after_deploy:
