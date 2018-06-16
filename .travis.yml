@@ -13,8 +13,6 @@ matrix:
         - npm run build
        # - npm run test:unit
         - codecov
-      before_deploy:
-        - cd dist
       deploy:
         provider: pages
         skip-cleanup: true
@@ -25,7 +23,8 @@ matrix:
           branch: master
 
       before_deploy:
-        - zip -r deploy.zip package.json src/ public/
+        - cd dist
+    #    - zip -r deploy.zip package.json src/ public/
 
       after_deploy:
-        - unzip -l deploy.zip
+     #   - unzip -l deploy.zip
