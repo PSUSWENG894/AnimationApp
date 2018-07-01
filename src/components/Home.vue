@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <h1>{{ msg }}</h1>
-        <button type="button" v-on:click=play()>Play</button>
+        <router-link to="/merge-sort" tag="button">Merge Sort</router-link>
         <div class="container">
             <div class="bar bar1"></div>
             <div class="ball"></div>
@@ -11,19 +11,19 @@
 </template>
 
 <script>
-    import anime from 'animejs'
+    import anime from 'animejs';
 
     export default {
         name: 'Home',
         data() {
             return {
-                msg: 'Welcome to My Animation!'
+                msg: 'Welcome to My Animation App!'
             }
         },
+        mounted() {
+            this.play();
+        },
         methods: {
-            test() {
-                console.log("Hello")
-            },
             play() {
                 let loop = true;
                 let easing = 'linear';
