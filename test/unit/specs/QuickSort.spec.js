@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import MergeSort from '@/components/MergeSort'
+import QuickSort from '@/components/QuickSort'
 
-describe('MergeSort.vue', () => {
+describe('QuickSort.vue', () => {
     it('all elements should be present', () => {
-        const Constructor = Vue.extend(MergeSort);
+        const Constructor = Vue.extend(QuickSort);
         const vm = new Constructor().$mount();
 
         let b1 = vm.$el.querySelector('.b1');
