@@ -20,7 +20,7 @@ describe('QuickSort.vue', () => {
         expect(b4).to.not.be.null;
         expect(b5).to.not.be.null;
         expect(b6).to.not.be.null;
-        expect(b7).to.not.be.null; //test
+        expect(b7).to.not.be.null; //test again
 
     })
 });
