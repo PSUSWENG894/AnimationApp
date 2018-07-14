@@ -1,13 +1,8 @@
 <template>
-    <div class="main">
-        <h1>{{ msg }}</h1>
-        <router-link to="/merge-sort" tag="button">Merge Sort</router-link>
-        <router-link to="/quick-sort" tag="button">Quick Sort</router-link>
-        <div class="container">
-            <div class="bar bar1"></div>
-            <div class="ball"></div>
-            <div class="bar bar2"></div>
-        </div>
+    <div class="container">
+        <div class="bar bar1"></div>
+        <div class="ball"></div>
+        <div class="bar bar2"></div>
     </div>
 </template>
 
@@ -146,7 +141,6 @@
     }
 
     .ball {
-        background: black;
         width: 10px;
         height: 10px;
         position: relative;

@@ -1,6 +1,15 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
+    <div>
+        <!--        <md-toolbar>
+                    <h1 class="md-title">{{msg}}</h1>
+                </md-toolbar>-->
+
+        <!--            <md-button class="md-icon-button md-raised" v-if="loaded"
+                               v-on:click=play()>
+                        <md-icon>home</md-icon>
+                    </md-button>-->
+
+
         <button type="button" v-if="loaded" v-on:click=play()>Play</button>
         <button type="button" v-if="loaded" v-on:click=pause()>Pause</button>
         <button type="button" v-if="loaded" v-on:click=restart()>Restart</button>
@@ -39,7 +48,7 @@
         data: function () {
 
             return {
-                msg: 'Quick Sort',
+                msg: "Quick Sort",
                 boxTimeline: null,
                 loaded: false,
             }
@@ -244,11 +253,12 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .box {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         border: 10px solid green;
         padding: 5px;
         margin: 5px;
+        background-color: white;
     }
 
     .b1 {

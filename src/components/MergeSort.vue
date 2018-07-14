@@ -1,10 +1,9 @@
 <template>
-    <div class="hello">
-        <h1>{{ msg }}</h1>
+    <div>
         <button type="button" v-if="loaded" v-on:click=play()>Play</button>
         <button type="button" v-if="loaded" v-on:click=pause()>Pause</button>
         <button type="button" v-if="loaded" v-on:click=restart()>Restart</button>
-        <br><br>
+        <br><br><br><br>
         <div>
             <div class="box b1">
                 38
@@ -186,11 +185,12 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .box {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         border: 10px solid green;
         padding: 5px;
         margin: 5px;
+        background-color: white;
     }
 
     .b1 {
