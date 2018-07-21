@@ -1,18 +1,6 @@
 <template>
     <div>
-        <!--        <md-toolbar>
-                    <h1 class="md-title">{{msg}}</h1>
-                </md-toolbar>-->
-
-        <!--            <md-button class="md-icon-button md-raised" v-if="loaded"
-                               v-on:click=play()>
-                        <md-icon>home</md-icon>
-                    </md-button>-->
-
-
-        <button type="button" v-if="loaded" v-on:click=play()>Play</button>
-        <button type="button" v-if="loaded" v-on:click=pause()>Pause</button>
-        <button type="button" v-if="loaded" v-on:click=restart()>Restart</button>
+        <ControlButtons v-bind:play="play" v-bind:pause="pause" v-bind:restart="restart"/>
         <br><br>
         <div>
             <div class="box b1">
@@ -42,9 +30,11 @@
 
 <script>
     import anime from 'animejs'
+    import ControlButtons from './ControlButtons'
 
     export default {
         name: 'MergeSort',
+        components: {ControlButtons},
         data: function () {
 
             return {

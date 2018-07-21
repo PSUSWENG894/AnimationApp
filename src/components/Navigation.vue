@@ -4,6 +4,7 @@
         <md-tab id="tab-home" md-label="Home" to="/"></md-tab>
         <md-tab id="tab-merge-sort" md-label="Merge Sort" to="/merge-sort"></md-tab>
         <md-tab id="tab-quick-sort" md-label="Quick Sort" to="/quick-sort"></md-tab>
+        <md-tab id="tab-matrix-multiply" md-label="Matrix Multiply" to="/matrix-multiply"></md-tab>
     </md-tabs>
 
 </template>

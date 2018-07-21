@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
         <md-toolbar>
             <h1 class="md-title">Animation App</h1>
         </md-toolbar>
@@ -10,6 +11,7 @@
 
 <script>
     import Navigation from "./components/Navigation";
+
     export default {
         name: 'App',
         components: {Navigation}

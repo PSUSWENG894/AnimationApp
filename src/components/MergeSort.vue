@@ -1,8 +1,6 @@
 <template>
     <div>
-        <button type="button" v-if="loaded" v-on:click=play()>Play</button>
-        <button type="button" v-if="loaded" v-on:click=pause()>Pause</button>
-        <button type="button" v-if="loaded" v-on:click=restart()>Restart</button>
+        <ControlButtons v-bind:play="play" v-bind:pause="pause" v-bind:restart="restart"/>
         <br><br><br><br>
         <div>
             <div class="box b1">
@@ -32,9 +30,13 @@
 
 <script>
     import anime from 'animejs'
+    import ControlButtons from './ControlButtons'
+
+
 
     export default {
         name: 'MergeSort',
+        components: {ControlButtons},
         data: function () {
 
             return {
