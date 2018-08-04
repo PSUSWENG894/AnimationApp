@@ -3,6 +3,7 @@
         <ControlButtons v-bind:play="play" v-bind:pause="pause" v-bind:restart="restart"/>
         <br><br><br><br><br><br><br><br>
         <div>
+            <div id="overlay">Under Construction!</div>
             <md-layout>
                 <md-layout-item class="box m1 r1 b1">
                     1
@@ -146,8 +147,21 @@
 </script>
 
 <style scoped>
-
-
+    #overlay {
+        position: fixed;
+        display: block;
+        width: 100%;
+        font-size: 50pt;
+        text-align: center;
+        text-wrap: normal;
+        vertical-align: middle;
+        line-height: 600px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
     .box {
         width: 50px;
         height: 50px;
